@@ -31,12 +31,14 @@ class LineComparison {
 
         double length_of_line1 = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
         double length_of_line2 = Math.sqrt(Math.pow(p, 2) + Math.pow(q, 2));
-
-        if (length_of_line1 == length_of_line2) {
+        if (length_of_line1 == length_of_line2){
             System.out.println("length of both line is equal");
-        } else {
-            System.out.println("length of both line is not equal");
+        }
+        else if (length_of_line1 > length_of_line2){
+            System.out.println("length_of_line1 is greater than length of line 2");
+        }
+        else {
+            System.out.println("length_of_line1 is smaller than length of line 2");
         }
     }
 }
-
